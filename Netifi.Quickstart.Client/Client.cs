@@ -16,7 +16,7 @@ namespace Netifi.Quickstart
             var accessKey = 9007199254740991;
             var accessToken = "kTBDVtfRBO4tHOnZzSyY5ym2kfY=";
             var transport = new SocketTransport("tcp://localhost:8001/");
-            var client = new Netifi.Broker.Client.BrokerClient(accessKey, accessToken, null, null, "quickstart.clients", "client", 0, new SortedDictionary<string, string>(), transport, RSocketOptions.Default);
+            var client = new Broker.Client.BrokerClient(accessKey, accessToken, null, null, "quickstart.clients", "client", 0, new SortedDictionary<string, string>(), transport, RSocketOptions.Default);
 
             // Connect to Netifi Platform
             await client.ConnectAsync();
